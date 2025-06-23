@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="content">
+        <h1 id="heading">Hello Developers</h1>
+        <p class="text">Welcome tp our DOM class</p>
+        <p class="text">Today we are going to learn about DOM</p>
+        <p class="text">DOM stands for Document Object Model</p>
+    </section>
+    <p id="footer">Copyright</p>
+
+    <script>
+        const h1 = document.getElementById('heading')
+        console.log(h1.innerText)
+        h1.innerText = 'Hello From developers'
+        //h1.innerHTML = 'Hello From <em>Developers</em>'
+        //h1.remove()
+
+        const h2 = document.createElement('h2')
+        h2.innerHTML = 'Hello from <em>Developer</em> again!'
+
+        const contentSection = document.getElementById('content')
+        contentSection.appendChild(h2)
+    </script>
+</body>
+</html>
