@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="content">
+        <h1 id="heading">Hello Developers</h1>
+        <h2 class="bold">This is a heading</h2>
+        <p class="bold">Welcome to our DOM class</p>
+        <p class="bold">Today we are going to learn about DOM</p>
+        <p class="bold">DOM stands for Document Object Model</p>
+        <p>This is a normal Paragraph</p>
+    </section>
+    <p id="footer">Copyright</p>
+    <div>Hello Hello</div>
+    <button style="margin-top:10px;" id="click">Make bold</button>
+
+    <script>
+        const button = document.getElementById('click')
+        button.addEventListener('click',function(){
+        //It will change first tag element
+        // const elements = document.querySelector(".bold")
+         //const elements = document.querySelector("h2.bold")
+         //It will change only first p tag element
+         //const elements = document.querySelector("p.bold")
+         const elements = document.querySelectorAll(".bold")
+         //const elements = document.querySelectorAll("p.bold")
+         //elements.innerHTML = 'Changed'
+         //console.log(elements)
+         elements.forEach(element =>{
+            element.innerHTML = `<em>${element.innerHTML}</em>`
+         })
+
+        })
+    </script>
+</body>
+</html>

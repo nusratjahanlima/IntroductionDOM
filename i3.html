@@ -8,10 +8,14 @@
 <body>
     <section id="content">
         <h1 id="heading">Hello Developers</h1>
-        <p class="text">Welcome to our DOM class</p>
+        <!-- <p class="text">Welcome to our DOM class</p>
         <p class="text">Today we are going to learn about DOM</p>
-        <p class="text">DOM stands for Document Object Model</p>
-      </section>
+        <p class="text">DOM stands for Document Object Model</p> -->
+        <p class="bold">Welcome to our DOM class</p>
+        <p class="bold">Today we are going to learn about DOM</p>
+        <p class="bold">DOM stands for Document Object Model</p>
+        <p>This is a normal Paragraph</p>
+    </section>
     <p id="footer">Copyright</p>
     <div>Hello Hello</div>
     <button style="margin-top:10px;" id="click">Make bold</button>
@@ -24,7 +28,7 @@
             // console.log(paragraphs)
             // paragraphs[1].remove()
 
-            const paragraphs = document.getElementsByTagName('p')
+            const paragraphs = document.getElementsByClassName('bold')
             for(let i = 0; i<paragraphs.length; i++){
                 //paragraphs[i].innerHTML = "<strong>"+paragraphs[i].innerHTML+"</strong>";
                 paragraphs[i].innerHTML = `<strong>${paragraphs[i].innerHTML}</strong>`;
